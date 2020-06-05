@@ -16,6 +16,7 @@ interface Item {
 interface Point {
   "id": number,
   "image": string,
+  "image_url": string,
   "name": string,
   "email": string,
   "latitude": number,
@@ -126,11 +127,7 @@ const Points = () => {
                     longitude: point.longitude
                   }}>
                   <View style={styles.mapMarkerContainer}>
-                    <Image style={styles.mapMarkerImage}
-                      source={{
-                        uri: "https://blog.guiabolso.com.br/wp-content/uploads/2018/02/mercado-1-1-700x525.jpg"
-                      }}>
-                    </Image>
+                    <Image style={styles.mapMarkerImage} source={{uri: point.image_url}} />
                     <Text style={styles.mapMarkerTitle}>{point.name}</Text>
                   </View>
 

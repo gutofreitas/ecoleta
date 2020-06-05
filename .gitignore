@@ -1,0 +1,11 @@
+.devcontainer/
+docker-compose.yml
+Dockerfile
+web/node_modules/
+server/node_modules/
+web/node_modules/
+mobile/node_modules/
+server/uploads/images/*
+!server/uploads/images/.gitKeep
+
+*.sqlite
